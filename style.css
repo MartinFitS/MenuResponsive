@@ -1,0 +1,216 @@
+/* estilos para eliminar los margenes de la página */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Zen Kurenaido', sans-serif; 
+    text-decoration: none;  
+}
+
+a{
+    color: black;
+}
+.logo{
+    width: 20%;
+    height: auto;
+    background-color: #648c9f;
+    color: blanchedalmond;
+}
+.logo h1{
+    font-size: 18px;
+    font-weight: 100;
+    padding-left: 10px;
+    padding-top: 7px;
+}
+.divmenu{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.menu{
+    width: 60%;
+}
+.redesSociales{
+    width: 20%;
+    height: auto;
+    background-color: #648c9f;
+}
+
+.redesSociales ul {
+    display:flex;
+    float: right;
+}
+
+.redesSociales ul li{
+    padding-right: 40px;
+    padding-top: 8px;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+.menu li a{
+    text-align: center;
+    font-weight: 100;
+    font-size: 15px;
+    background-color: #648c9f;
+    color: blanchedalmond;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.menu li a:hover{
+    background-color: #adc3bf;
+    transition: 350ms;
+    cursor: pointer;
+}
+
+.menu > li{
+    width: 25%;
+    float: left;
+}
+
+.menu li ul{
+    display: none;
+    position: absolute;
+    min-width: 15%;
+}
+
+.menu li:hover > ul{
+    display: block;
+    transition: 250ms;
+}
+
+.imagenPresentacion{
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-repeat: none;
+    background-image: url("https://cdn.pixabay.com/photo/2012/08/27/14/19/mountains-55067_960_720.png");
+}
+
+.presentacion{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-top: 150px;
+}
+.presentacion h1{
+    font-weight: 100;
+    padding-bottom: 10px;
+}
+
+.presentacion p {
+    padding-bottom: 10px;
+}
+
+.presentacion button{
+    width: 70px;
+    height: 40px;
+    font-size: 18px;
+    background:transparent;
+    border-radius: 30px;
+    border: 1px solid black;
+}
+
+.presentacion button:hover{
+    cursor:pointer;
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    transition: 250ms;
+}
+
+/* responsive */
+
+@media (max-width:988px){
+    .menu {
+        width: 70%;
+    }
+    .redesSociales {
+        width: 20%;
+    }
+    .redesSociales ul li {
+        padding-right: 27px;
+        padding-top: 8px;
+    }
+}
+
+@media(max-width:892px){
+    .redesSociales ul li {
+        padding-right: 20px;
+        padding-top: 8px;
+    }
+}
+
+@media (max-width:823px){
+    .logo h1 {
+        font-size: 16px;
+        padding-top: 9px;
+    }
+}
+
+@media(max-width:751px){
+    .menu {
+        width: 60%;
+    }
+
+}
+
+@media(max-width:676px){
+    .logo h1 {
+        font-size: 13px;
+        padding-top: 9px;
+    }
+    .redesSociales ul li {
+        padding-right: 14px;
+    }
+    .menu li a {
+        font-size: 14px;
+    }
+}
+
+@media(max-width:582px){
+    .menu li a {
+        font-size: 14px;
+        padding-left: 0px;
+    }
+    .redesSociales ul li a img{
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width:491px){
+    .logo h1 {
+        font-size: 11px;
+        padding-top: 11px;
+    }
+    .menu li a {
+        font-size: 11px;
+        padding-left: 0px;
+    }
+    .redesSociales ul li {
+        padding-right: 9px;
+    }
+}
+
+@media(max-width:414px){
+    .logo{
+        display: none;
+    }
+    .redesSociales{
+        display: none;
+    }
+    .menu {
+        width: 100%;
+    }
+    .menu li ul{
+        display: none;
+        position: absolute;
+        min-width: 25%;
+    }
+}
